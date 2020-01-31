@@ -29,19 +29,26 @@ loop do
   play :Fs6
   sleep 0.25
   play :D6
+  play :D4
   sleep 0.25
   play :Bb5
+  play :A4
   sleep 0.25
   play :G5
+  play :G4
   sleep 0.25
   
   play :G6
+  play :C5
   sleep 0.25
   play :D6
+  play :A4
   sleep 0.25
   play :Bb5
+  play :G4
   sleep 0.25
   play :G5
+  play :D4
   sleep 0.25
   
   
@@ -68,6 +75,7 @@ loop do
   sleep 0.25
   
   play :E6
+  play :A2, sustain: 0.5
   sleep 0.25
   play :C6
   sleep 0.25
@@ -109,6 +117,7 @@ loop do
   sleep 0.25
   
   play :Eb6
+  play :G2, sustain: 0.5
   sleep 0.25
   play :Bb5
   sleep 0.25
@@ -150,6 +159,7 @@ loop do
   sleep 0.25
   
   play :Cs6
+  play :F2, sustain: 0.5
   sleep 0.25
   play :A5
   sleep 0.25
@@ -193,6 +203,7 @@ loop do
   sleep 0.25
   
   play :Fs6
+  play :Bb2, sustain: 0.5
   sleep 0.25
   play :D6
   sleep 0.25
@@ -212,7 +223,7 @@ loop do
   
   
   play :Bb6
-  play :C3, sustain: 0.5
+  play :A2, sustain: 0.5
   sleep 0.25
   play :Eb6
   play :C3
@@ -234,6 +245,7 @@ loop do
   sleep 0.25
   
   play :Gs6
+  play :D3, sustain: 0.5
   sleep 0.25
   play :Eb6
   sleep 0.25
@@ -253,6 +265,7 @@ loop do
   
   
   play :C7
+  play :G2, sustain: 0.5
   sleep 0.25
   play :D6
   sleep 0.25
@@ -271,6 +284,7 @@ loop do
   sleep 0.25
   
   play :A6
+  play :G2, sustain: 0.5
   sleep 0.25
   play :D6
   sleep 0.25
@@ -290,6 +304,7 @@ loop do
   
   
   play :A6
+  play :C3, sustain: 0.5
   sleep 0.25
   play :C6
   sleep 0.25
@@ -308,6 +323,7 @@ loop do
   sleep 0.25
   
   play :F6
+  play :C3, sustain: 0.5
   sleep 0.25
   play :C6
   sleep 0.25
