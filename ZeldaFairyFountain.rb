@@ -275,19 +275,26 @@ loop do
   play :D3, sustain: 0.5
   sleep 0.25
   play :Eb6
+  play :D4
   sleep 0.25
   play :C6
+  play :C5
   sleep 0.25
   play :A5
+  play :A4
   sleep 0.25
   
   play :A6
+  play :Eb5
   sleep 0.25
   play :Eb6
+  play :D5
   sleep 0.25
   play :C6
+  play :C5
   sleep 0.25
   play :A5
+  play :A4
   sleep 0.25
   
   
