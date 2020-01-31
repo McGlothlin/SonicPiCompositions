@@ -128,10 +128,13 @@ loop do
   
   
   play :E6
+  play :F2, sustain: 0.5
   sleep 0.25
   play :A5
+  play :F3
   sleep 0.25
   play :F5
+  play :A3
   sleep 0.25
   play :D5
   play :E4, sustain: 0.5
@@ -168,12 +171,16 @@ loop do
   
   
   play :A6
+  play :Bb2, sustain: 0.5
   sleep 0.25
   play :D6
+  play :Bb3
   sleep 0.25
   play :Bb5
+  play :D4
   sleep 0.25
   play :G5
+  play :A4, sustain: 0.5
   sleep 0.25
   
   play :G6
@@ -205,12 +212,16 @@ loop do
   
   
   play :Bb6
+  play :C3, sustain: 0.5
   sleep 0.25
   play :Eb6
+  play :C3
   sleep 0.25
   play :C6
+  play :C4
   sleep 0.25
   play :A5
+  play :C5, sustain: 0.5
   sleep 0.25
   
   play :A6
