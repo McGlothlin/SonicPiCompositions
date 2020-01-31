@@ -5,7 +5,7 @@ use_bpm 78
 loop do
   
   play :A6
-  play :Bb2, sustain: 2
+  play :Bb2, sustain: 1.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -14,7 +14,7 @@ loop do
   play :D4
   sleep 0.25
   play :G5
-  play :A4, sustain: 0.5
+  play :A4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :G6
@@ -53,7 +53,7 @@ loop do
   
   
   play :G6
-  play :A2, sustain: 0.5
+  play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :A3
@@ -62,7 +62,7 @@ loop do
   play :C4
   sleep 0.25
   play :F5
-  play :G4, sustain: 0.5
+  play :G4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :F6
@@ -75,7 +75,7 @@ loop do
   sleep 0.25
   
   play :E6
-  play :A2, sustain: 0.5
+  play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :C4
@@ -102,7 +102,7 @@ loop do
   
   
   play :F6
-  play :G2, sustain: 0.5
+  play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Bb5
   play :G3
@@ -111,7 +111,7 @@ loop do
   play :Bb3
   sleep 0.25
   play :E5
-  play :F4, sustain: 0.5
+  play :F4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :E6
@@ -124,7 +124,7 @@ loop do
   sleep 0.25
   
   play :Eb6
-  play :G2, sustain: 0.5
+  play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Bb5
   play :Bb3
@@ -151,7 +151,7 @@ loop do
   
   
   play :E6
-  play :F2, sustain: 0.5
+  play :F2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :A5
   play :F3
@@ -160,7 +160,7 @@ loop do
   play :A3
   sleep 0.25
   play :D5
-  play :E4, sustain: 0.5
+  play :E4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :D6
@@ -173,7 +173,7 @@ loop do
   sleep 0.25
   
   play :Cs6
-  play :F2, sustain: 0.5
+  play :F2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :A5
   play :C4
@@ -202,7 +202,7 @@ loop do
   
   
   play :A6
-  play :Bb2, sustain: 0.5
+  play :Bb2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -211,7 +211,7 @@ loop do
   play :D4
   sleep 0.25
   play :G5
-  play :A4, sustain: 0.5
+  play :A4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :G6
@@ -224,7 +224,7 @@ loop do
   sleep 0.25
   
   play :Fs6
-  play :Bb2, sustain: 0.5
+  play :Bb2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :D4
@@ -251,7 +251,7 @@ loop do
   
   
   play :Bb6
-  play :A2, sustain: 0.5
+  play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Eb6
   play :Fs3
@@ -260,7 +260,7 @@ loop do
   play :C4
   sleep 0.25
   play :Fs5
-  play :C5, sustain: 0.5
+  play :C5, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :A6
@@ -273,7 +273,7 @@ loop do
   sleep 0.25
   
   play :Gs6
-  play :D3, sustain: 0.5
+  play :D3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Eb6
   play :D4
@@ -300,7 +300,7 @@ loop do
   
   
   play :C7
-  play :G2, sustain: 0.5
+  play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -322,7 +322,7 @@ loop do
   sleep 0.25
   
   play :A6
-  play :G2, sustain: 0.5
+  play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -349,7 +349,7 @@ loop do
   
   
   play :A6
-  play :C3, sustain: 0.5
+  play :C3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :Bb3
@@ -358,7 +358,7 @@ loop do
   play :D4
   sleep 0.25
   play :E5
-  play :Bb4, sustain: 0.5
+  play :Bb4, sustain: 0.5, amp: 0.7
   sleep 0.25
   
   play :G6
@@ -371,7 +371,7 @@ loop do
   sleep 0.25
   
   play :F6
-  play :C3, sustain: 0.5
+  play :C3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :D4
