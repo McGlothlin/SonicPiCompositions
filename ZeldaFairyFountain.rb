@@ -5,7 +5,7 @@ use_bpm 80
 loop do
   
   play :A6
-  play :Bb2, sustain: 0.5
+  play :Bb2, sustain: 2
   sleep 0.25
   play :D6
   play :Bb3
@@ -237,7 +237,7 @@ loop do
   sleep 0.25
   
   play :G6
-  play :C5
+  play :D5
   sleep 0.25
   play :D6
   play :A4
@@ -254,12 +254,12 @@ loop do
   play :A2, sustain: 0.5
   sleep 0.25
   play :Eb6
-  play :C3
+  play :G3
   sleep 0.25
   play :C6
   play :C4
   sleep 0.25
-  play :A5
+  play :Fs5
   play :C5, sustain: 0.5
   sleep 0.25
   
@@ -269,7 +269,7 @@ loop do
   sleep 0.25
   play :C6
   sleep 0.25
-  play :A5
+  play :Fs5
   sleep 0.25
   
   play :Gs6
@@ -281,7 +281,7 @@ loop do
   play :C6
   play :C5
   sleep 0.25
-  play :A5
+  play :Fs5
   play :A4
   sleep 0.25
   
@@ -294,7 +294,7 @@ loop do
   play :C6
   play :C5
   sleep 0.25
-  play :A5
+  play :Fs5
   play :A4
   sleep 0.25
   
