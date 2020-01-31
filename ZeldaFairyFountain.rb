@@ -1,6 +1,6 @@
 # Welcome to Sonic Pi v3.1
 
-use_bpm 76
+use_bpm 78
 
 loop do
   
