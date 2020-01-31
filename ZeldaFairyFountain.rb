@@ -254,7 +254,7 @@ loop do
   play :A2, sustain: 0.5
   sleep 0.25
   play :Eb6
-  play :G3
+  play :Fs3
   sleep 0.25
   play :C6
   play :C4
