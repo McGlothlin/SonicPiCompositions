@@ -1,6 +1,6 @@
 # Welcome to Sonic Pi v3.1
 
-use_bpm 80
+use_bpm 76
 
 loop do
   
@@ -377,7 +377,7 @@ loop do
   play :D4
   sleep 0.25
   play :G5
-  play :A4
+  play :Bb4
   sleep 0.25
   play :E5
   play :G4
