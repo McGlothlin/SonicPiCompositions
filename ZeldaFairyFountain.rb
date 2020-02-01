@@ -1,6 +1,4 @@
-use_bpm 78
-
-loop do
+define :zelda do
   
   play :A6
   play :Bb2, sustain: 1.5, amp: 0.7
@@ -395,3 +393,45 @@ loop do
   sleep 0.25
   
 end
+
+
+
+use_bpm 60
+count = 0
+
+live_loop :foo do
+  
+  live_loop :kick do
+    sample  :bd_tek, lpf: :A4, amp: 4
+    sleep 0.5
+  end
+  
+  live_loop :fairy do
+    
+    zelda
+    count += 1
+  end
+  
+  if count > 0
+    live_loop :cymbal do
+      sleep 0.5
+      sample :drum_cymbal_closed
+      sleep 0.5
+    end
+  end
+  
+  sleep 0.5
+  
+  if count > 1
+    live_loop :drums do
+      sleep 0.5
+      sample  :perc_snap, amp: 4
+      sleep 0.5
+    end
+    sleep 0.5
+  end
+  
+  sleep 0.5
+  
+end
+
