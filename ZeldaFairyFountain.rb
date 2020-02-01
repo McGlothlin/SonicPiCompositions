@@ -400,42 +400,43 @@ use_bpm 60
 count = 0
 
 live_loop :main do
-  
+
   live_loop :kick do
     sample  :bd_tek, lpf: :A4, amp: 4
     sleep 0.5
   end
-  
-  live_loop :fairy do
-    
-    zelda
-    count += 1
-  end
-  
-  #if count > 0
-  live_loop :cymbal do
-    sleep 0.5
-    sample :drum_cymbal_closed
-    sleep 0.5
-  end
-  #end
-  
-  
-  ##| if count > 1
-  live_loop :snap do
-    sleep 0.25
-    sample :drum_cymbal_closed
-    sleep 0.25
-    with_fx :reverb, mix: 0.5, damp: 0.1, room: 0.8 do
-      sample  :perc_snap, amp: 1.5
+
+  zelda
+  count += 1
+
+  if count > 0
+
+    live_loop :cymbal do
+      sleep 0.5
+      sample :drum_cymbal_closed
+      sleep 0.5
     end
-    sleep 0.25
-    sample :drum_cymbal_closed
-    sleep 0.25
+
   end
-  ##| end
-  
-  sleep 0.5
+
+
+  if count > 1
+
+    live_loop :snap do
+      sleep 0.25
+      sample :drum_cymbal_closed
+      sleep 0.25
+
+      with_fx :reverb, mix: 0.5, damp: 0.1, room: 0.8 do
+        sample  :perc_snap, amp: 1.5
+      end
+
+      sleep 0.25
+      sample :drum_cymbal_closed
+      sleep 0.25
+    end
+
+  end
   
 end
 
