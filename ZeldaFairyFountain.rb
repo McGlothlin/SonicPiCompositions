@@ -490,7 +490,12 @@ end
 use_bpm 78
 count = 0
 
-#live_loop :main do
+4.times do
+  live_loop :cymbal do
+    cymbal
+  end
+  kick
+end
 
 live_loop :trap do
   kick
@@ -505,6 +510,3 @@ end
 live_loop :zelda_rhythm do
   zelda_bass
 end
-
-#end
-
