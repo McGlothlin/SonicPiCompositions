@@ -1,7 +1,7 @@
 define :zelda do
   
   play :A6
-  play :Bb2, sustain: 1.5, amp: 0.7
+  #play :Bb2, sustain: 1.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -49,7 +49,7 @@ define :zelda do
   
   
   play :G6
-  play :A2, sustain: 0.5, amp: 0.7
+  #play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :A3
@@ -71,7 +71,7 @@ define :zelda do
   sleep 0.25
   
   play :E6
-  play :A2, sustain: 0.5, amp: 0.7
+  #play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :C4
@@ -98,7 +98,7 @@ define :zelda do
   
   
   play :F6
-  play :G2, sustain: 0.5, amp: 0.7
+  #play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Bb5
   play :G3
@@ -120,7 +120,7 @@ define :zelda do
   sleep 0.25
   
   play :Eb6
-  play :G2, sustain: 0.5, amp: 0.7
+  #play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Bb5
   play :Bb3
@@ -147,7 +147,7 @@ define :zelda do
   
   
   play :E6
-  play :F2, sustain: 0.5, amp: 0.7
+  #play :F2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :A5
   play :F3
@@ -169,7 +169,7 @@ define :zelda do
   sleep 0.25
   
   play :Cs6
-  play :F2, sustain: 0.5, amp: 0.7
+  #play :F2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :A5
   play :C4
@@ -198,7 +198,7 @@ define :zelda do
   
   
   play :A6
-  play :Bb2, sustain: 0.5, amp: 0.7
+  #play :Bb2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -220,7 +220,7 @@ define :zelda do
   sleep 0.25
   
   play :Fs6
-  play :Bb2, sustain: 0.5, amp: 0.7
+  #play :Bb2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :D4
@@ -247,7 +247,7 @@ define :zelda do
   
   
   play :Bb6
-  play :A2, sustain: 0.5, amp: 0.7
+  #play :A2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Eb6
   play :Fs3
@@ -269,7 +269,7 @@ define :zelda do
   sleep 0.25
   
   play :Gs6
-  play :D3, sustain: 0.5, amp: 0.7
+  #play :D3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :Eb6
   play :D4
@@ -296,7 +296,7 @@ define :zelda do
   
   
   play :C7
-  play :G2, sustain: 0.5, amp: 0.7
+  #play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -318,7 +318,7 @@ define :zelda do
   sleep 0.25
   
   play :A6
-  play :G2, sustain: 0.5, amp: 0.7
+  #play :G2, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :D6
   play :Bb3
@@ -345,7 +345,7 @@ define :zelda do
   
   
   play :A6
-  play :C3, sustain: 0.5, amp: 0.7
+  #play :C3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :Bb3
@@ -367,7 +367,7 @@ define :zelda do
   sleep 0.25
   
   play :F6
-  play :C3, sustain: 0.5, amp: 0.7
+  #play :C3, sustain: 0.5, amp: 0.7
   sleep 0.25
   play :C6
   play :D4
@@ -394,49 +394,77 @@ define :zelda do
   
 end
 
+define :kick do
+  sample :bd_klub
+  sleep 1
+  with_fx :reverb, mix: 0.5, damp: 0.1, room: 0.8 do
+    sample  :perc_snap#, amp: 1.5
+  end
+  sleep 1.5
+  sample :bd_klub
+  sleep 0.75
+  sample :bd_klub
+  sleep 0.25
+  sample :bd_klub
+  sleep 0.25  
+end
+
+define :cymbal do
+  sample :drum_cymbal_closed
+  sleep 0.25
+end
 
 
-use_bpm 60
+
+
+use_bpm 78
 count = 0
 
 live_loop :main do
-
-  live_loop :kick do
-    sample  :bd_tek, lpf: :A4, amp: 4
-    sleep 0.5
+  
+  ##| live_loop :kick do
+  ##|   sample  :bd_tek, lpf: :A4, amp: 4
+  ##|   sleep 0.5
+  ##| end
+  
+  ##| 4.times do
+  ##|   trap
+  ##| end
+  
+  live_loop :trap do
+    kick
+    cymbal
   end
-
   zelda
-  count += 1
-
-  if count > 0
-
-    live_loop :cymbal do
-      sleep 0.5
-      sample :drum_cymbal_closed
-      sleep 0.5
-    end
-
-  end
-
-
-  if count > 1
-
-    live_loop :snap do
-      sleep 0.25
-      sample :drum_cymbal_closed
-      sleep 0.25
-
-      with_fx :reverb, mix: 0.5, damp: 0.1, room: 0.8 do
-        sample  :perc_snap, amp: 1.5
-      end
-
-      sleep 0.25
-      sample :drum_cymbal_closed
-      sleep 0.25
-    end
-
-  end
+  
+  ##| if count > 0
+  
+  ##|   live_loop :cymbal do
+  ##|     sleep 0.5
+  ##|     sample :drum_cymbal_closed
+  ##|     sleep 0.5
+  ##|   end
+  
+  ##| end
+  
+  
+  ##| if count > 1
+  
+  ##|   live_loop :snap do
+  ##|     sleep 0.25
+  ##|     sample :drum_cymbal_closed
+  ##|     sleep 0.25
+  
+  ##|     with_fx :reverb, mix: 0.5, damp: 0.1, room: 0.8 do
+  ##|       sample  :perc_snap, amp: 1.5
+  ##|     end
+  
+  ##|     sleep 0.25
+  ##|     sample :drum_cymbal_closed
+  ##|     sleep 0.25
+  ##|   end
+  
+  ##| end
   
 end
 
