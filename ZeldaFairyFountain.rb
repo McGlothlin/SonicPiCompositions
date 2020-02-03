@@ -508,4 +508,3 @@ in_thread do
     zelda_bass
   end
 end
-
